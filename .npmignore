@@ -1,0 +1,36 @@
+# Package.json `files` is the authoritative allowlist. These deny rules are
+# an additional guard against accidentally shipping local data.
+.env
+.env.*
+.npmrc
+.netrc
+.pypirc
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+*credentials*
+*secrets*
+private/
+secrets/
+.ssh/
+.aws/
+.azure/
+.config/gh/
+.dsh/
+.codex/
+.openclaw-*/
+memory-vault/
+node_modules/
+dist/
+coverage/
+*.log
+*.sqlite
+*.sqlite3
+*.db
+*.tgz
+Thumbs.db
+Desktop.ini
+.DS_Store

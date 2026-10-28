@@ -1,0 +1,4 @@
+- insert:
+    - id: dsh-efficiency-prompt
+      name: dsh-efficiency-prompt
+      inject: [systemPrompt]

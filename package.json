@@ -1,0 +1,17 @@
+{
+  "name": "dsh-efficiency-prompt",
+  "version": "1.0.0",
+  "description": "A small, safety-aligned execution-efficiency prompt plugin for DeepSeek Harness (DSH).",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": "./lib/index.js",
+  "files": ["lib/index.js", "cordis.patch.yml", "README.md", "README.zh-CN.md", "LICENSE"],
+  "engines": {
+    "node": ">=18",
+    "dsh": ">=0.2.0-rc.2 <0.2.2-0"
+  },
+  "peerDependencies": { "@deepseek-ai/cordis": "^4.0.1" },
+  "dsh": { "bundle": { "patch": "./cordis.patch.yml" }, "manifestVersion": 1 },
+  "license": "SEE LICENSE IN LICENSE",
+  "keywords": ["dsh", "dsh-plugin", "prompt", "productivity", "efficiency"]
+}
